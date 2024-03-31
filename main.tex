@@ -1,0 +1,36 @@
+%% Template for Bachelor Thesis of Jiangsu Uniersity
+
+\documentclass[]{UJSBachelor}
+
+\begin{document}
+%%----------- 封面 ----------- %%
+  \ctitle{\LaTeX{} 毕业论文模板使用说明}
+  \etitle{Template for Undergraduate Thesis \linebreak Jiangsu University}
+  \cschool{}  % 学院名称，Your College
+  \cmajor{}  % 专业名称，Your Major
+  \cauthor{}  % 学生姓名，Student's Name
+  \cadvisor{}  % 指导教师姓名，Teacher's Name
+  \cadvisorinfo{}  % 指导教师职称，Teacher's Title
+  \cdate{二〇二四年六月}  % 论文提交时间，Submission Time
+
+  \maketitlepage  % 封面
+
+%%----------- 前言 ----------- %%
+  \include{pages/abstract}  % 摘要
+  \contents  % 目录
+
+%%----------- 正文 ----------- %%
+  \include{pages/chapter1}
+  \include{pages/chapter2}
+  \include{pages/chapter3}
+  \include{pages/chapter4}
+  \include{pages/conclusion}
+
+%%----------- 结尾 ----------- %%
+  \include{pages/thanks}  % 致谢
+  \addcontentsline{toc}{chapter}{参考文献}
+  \bibliography{ref/refs}  % 参考文献
+
+  \include{pages/appendix}  % 附录
+
+\end{document}
